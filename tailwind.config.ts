@@ -30,7 +30,8 @@ const tailwindConfig: Config = {
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
              
-                navbarBg: '#E2E0D9',          
+                navbarBg: '#E2E0D9',
+                         
                 navbarText: '#9C8376',
                 bodyBg: '#DBC0B3',
                 card: {

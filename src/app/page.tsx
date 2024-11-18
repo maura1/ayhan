@@ -1,4 +1,32 @@
+
+import ServicesList from "@/components/ServiceList";
 import Container from "@/components/ui/container";
+
+const services = [
+  {
+    id: "1",    
+    name: "Wimpernbehandlungen (3)",    
+    images: ["/img/products/FX3.png"],
+  },
+  {
+    id: "2",
+    name: "Augenbrauenbehandlungen (3)", 
+    
+    images: ["/img/products/7SIII.png"],
+  },
+  {
+    id: "3",  
+    name: "Permanent Make-up (12)",   
+    images: ["/img/products/7C.png"],
+  },
+  {
+    id: "4",  
+    name: "WimpernBehandlungen (3)",  
+    images: ["/img/products/7IV.png"],
+  },   
+ 
+];
+
 
 export default function HomePage() {
   return (
@@ -20,7 +48,10 @@ export default function HomePage() {
           </div>
          
           </div>
-
+          <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
+         
+        </div>
+        <ServicesList items={services}/>
         
       </div>
     </Container>

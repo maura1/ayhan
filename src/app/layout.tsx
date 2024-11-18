@@ -28,12 +28,12 @@ export default function RootLayout({
       <body
         className={`${cinzel.variable} ${lato.variable} antialiased bg-[#DBC0B3] p-8`}
       >
-        
+        <div className="bg-white min-h-screen">
           <main>
             <Header />
             {children}
           </main>
-        
+        </div>
       </body>
       </ThemeProvider>
     </html>
