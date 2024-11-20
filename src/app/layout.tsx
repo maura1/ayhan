@@ -1,5 +1,3 @@
-'use client';
-
 import { Cinzel, Lato } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
@@ -17,6 +15,15 @@ const lato = Lato({
   variable: '--font-lato',
 });
 
+// Export metadata here
+export const metadata = {
+  title: {
+    template: '%s | Ayhan Kubly',
+    absolute: 'Ayhan Kubly',
+  },
+  description: 'Ayhan Kubly is a permanent makeup artist.',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -24,18 +31,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeProvider>
       <body
-        className={`${cinzel.variable} ${lato.variable} antialiased bg-[#DBC0B3] p-8`}
+        className={`${cinzel.variable} ${lato.variable} antialiased bg-[#DBC0B3] px-8`}
       >
-        <div className="bg-white min-h-screen">
+        <ThemeProvider>
           <main>
             <Header />
             {children}
           </main>
-        </div>
+        </ThemeProvider>
       </body>
-      </ThemeProvider>
     </html>
   );
 }

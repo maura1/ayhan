@@ -14,8 +14,15 @@ const tailwindConfig: Config = {
                 serif: ['var(--font-cinzel)', 'serif'] 
             },
             fontSize: {
-                '66': '66px', // Custom text size
+                '66': '66px', 
+                '48':'48px',
+                '36':'36px'
             },
+            
+            height: {
+                'custom': '200px', 
+            },
+
             backgroundColor: {
                 'overlay': '#000000'
             },
@@ -31,7 +38,7 @@ const tailwindConfig: Config = {
                 foreground: 'hsl(var(--foreground))',
              
                 navbarBg: '#E2E0D9',
-                         
+                whiteBg:'#fffef9' ,      
                 navbarText: '#9C8376',
                 bodyBg: '#DBC0B3',
                 card: {

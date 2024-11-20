@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Container from "./ui/container";
@@ -8,11 +10,11 @@ import { Menu, Moon, Sun, Phone } from "lucide-react";
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const routes = [
-    { href: '/', label: 'HOME', id: '1' },
-    { href: '/behandlung', label: 'BEHANDLUNG', id: '2' },
-    { href: '/Über-mich', label: 'ÜBER MICH', id: '3' },
+    { href: '/', label: 'HOME', id: '1' },    
+    { href: '/uebermich', label: 'ÜBER-MICH', id: '2' },
+    { href: '/behandlung', label: 'BEHANDLUNG', id: '3' },
     { href: '/bildergalerie', label: 'BILDERGALERIE', id: '4' },
-    { href: '/Kontakt', label: 'KONTAKT', id: '5' },
+    { href: '/kontakt', label: 'KONTAKT', id: '5' },
   ];
 
   return (
