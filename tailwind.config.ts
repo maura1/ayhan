@@ -41,6 +41,8 @@ const tailwindConfig: Config = {
                 whiteBg:'#fffef9' ,      
                 navbarText: '#9C8376',
                 bodyBg: '#DBC0B3',
+                welcomeBg: '#A6A18B',
+
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))'

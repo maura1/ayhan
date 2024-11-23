@@ -1,5 +1,9 @@
+import ServiceList from "@/components/ServicesList";
+
 export default function BehandlungPage(){
     return(
-        <h1>Behandlung</h1>
+        <>
+        <ServiceList />
+        </>
     )
 }

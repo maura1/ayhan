@@ -1,3 +1,9 @@
-export default function KontaktPage(){
-    return <h1>This is the kontakt page</h1>
+import Footer from "@/components/Footer";
+
+export default function FooterPage(){
+    return(
+        <>
+        <Footer />
+        </>
+    )
 }

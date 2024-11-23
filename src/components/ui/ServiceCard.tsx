@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ data, imageRight = false }) =
       href="/"
       className="outline-0  focus:ring-2 hover:ring-2 ring-navbarText transition duration-300 rounded-lg block"
     >
-      <Card className="rounded-lg shadow-lg overflow-hidden">
+      <Card className="bg-whiteBg rounded-lg shadow-lg overflow-hidden">
         <div
           className={`flex ${
             imageRight ? "flex-row-reverse" : "flex-row"
@@ -37,7 +37,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ data, imageRight = false }) =
           <CardContent className="w-1/2 p-6 flex flex-col justify-between">
             <div className="space-y-2">
               <p className="font-semibold text-lg text-navbarText underline">{data.name}</p>
-              {/*<p className="text-sm text-gray-600 line-clamp-3">{data.description}</p>*/}
+              <p className="text-sm text-navbarText line-clamp-3">{data.description}</p>
             </div>
             <p className="text-sm font-semibold  mt-4 text-right text-navbarText">
               mehr &gt;

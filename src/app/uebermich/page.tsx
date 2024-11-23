@@ -1,5 +1,9 @@
-export default function ÜberMichPage(){
+import AboutMe from "@/components/AboutMe";
+
+export default function AboutMePage(){
     return(
-        <h1>Hello there</h1>
+        <>
+        <AboutMe />
+        </>
     )
 }

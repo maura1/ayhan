@@ -76,5 +76,12 @@
     h1 div{
         font-family: var(--font-cinzel);
     }
-    
+
+            .bg-noise {
+        background-image: url('/images/serviceBg.jpg'); 
+        background-size: cover;
+        opacity: 0.2;
+        mix-blend-mode: overlay;
+        }
+
 }

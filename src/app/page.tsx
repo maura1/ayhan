@@ -1,18 +1,28 @@
-import Hero from '@/components/Hero'
+import Hero from '@/components/Hero';
 import Reviews from '@/components/ReviewsList';
 import ServicesList from '@/components/ServicesList';
-import Kontakt from '@/components/Kontakt'
+import Footer from '@/components/Footer';
+import Welcome from '@/components/Welcome'; // Import Welcome component
+import PriceList from '@/components/PriceList';
 
 export default function HomePage() {  
-
   return (
     <>
-    
-  <Hero />
-  <ServicesList />
-  <Reviews />
-  <Kontakt />
-     
+      {/* Wrapper for Hero and Welcome */}
+      <div className="relative">
+        <Hero />
+        <Welcome />
+      </div>
+
+      {/* Services Section */}
+      <div className="relative z-0">
+        <ServicesList />
+      </div>
+
+      {/* Other Sections */}
+      <Reviews />
+      <PriceList/>
+      <Footer />
     </>
   );
 }
